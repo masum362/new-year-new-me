@@ -3,11 +3,14 @@
     --heading-color: #151414;
     --secondary-color: #444343;
 }
-
-body {
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+body {
+   
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -22,11 +25,12 @@ body {
 }
 
 .header-banner {
-    padding: 100px 150px;
+    margin: 100px 150px;
     width: 525px;
     display: flex;
     flex-direction: column;
     align-items: end;
+    gap: 20px;
 
 }
 
@@ -35,8 +39,7 @@ body {
     font-size: 65px;
     font-weight: 700;
     text-align: right;
-    margin: 0px;
-
+  
 }
 
 .header-banner>p {
@@ -67,10 +70,11 @@ body {
 
 }
 
-main{
+main {
     max-width: 11500px;
-    margin:auto;
+    margin: auto;
 }
+
 main section {
     padding: 10px 150px;
     margin: 100px 0px;
@@ -88,18 +92,15 @@ main section {
     display: flex;
     flex-direction: column;
     align-items: start;
-
-
     width: 500px;
-    padding: 20px 100px;
+    margin: 20px 100px;
+    gap: 10px;
 }
 
 .hero-details>.hero-title {
     color: var(--heading-color);
     font-size: 40px;
     font-weight: 700;
-
-    margin: 0px;
 }
 
 .hero-details>p {
@@ -118,8 +119,8 @@ main section {
 .plan-section {
     display: flex;
     flex-direction: column;
-    margin: 150px 0px;
- 
+    padding: 50px 100px;
+    gap: 50px;
 }
 
 .plan-section>h3 {
@@ -127,14 +128,14 @@ main section {
     font-size: 40px;
     font-weight: 700;
     text-align: center;
-   
+
 }
 
 .plan-section>.plans {
- 
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 20px;
 }
 
 .plan-section>.plans>.individual-plan {
@@ -151,4 +152,54 @@ main section {
     color: var(--secondary-color);
     font-size: 25px;
     font-weight: 500;
+}
+
+.contact-section {
+    background-image: url('../images/watch.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    position: relative;
+}
+
+.contact-section>img {
+    z-index: 1;
+}
+
+.contact-details {
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    z-index: 10;
+    align-items: start;
+    padding: 40px;
+}
+
+.contact-heading {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 700;
+    width: 500px;
+    
+}
+
+.contact-btn {
+    border-radius: 5px;
+    background: #FFF;
+    color: #F15B22;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.contact-btn:hover{
+    background: rgb(233, 233, 233);
+    color: var(--primary-color);
+    
 }
