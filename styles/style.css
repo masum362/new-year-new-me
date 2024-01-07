@@ -1,0 +1,154 @@
+:root {
+    --primary-color: #F15B22;
+    --heading-color: #151414;
+    --secondary-color: #444343;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.header {
+    background-image: url('../images/banner/banner1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+}
+
+.header-banner {
+    padding: 100px 150px;
+    width: 525px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+
+.banner-heading {
+    color: var(--heading-color);
+    font-size: 65px;
+    font-weight: 700;
+    text-align: right;
+    margin: 0px;
+
+}
+
+.header-banner>p {
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+    line-height: 26px;
+}
+
+.header-banner>button {
+    background-color: var(--primary-color);
+    padding: 10px 15px;
+    text-align: right;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.header-banner>button:hover {
+    background: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+
+}
+
+main{
+    max-width: 11500px;
+    margin:auto;
+}
+main section {
+    padding: 10px 150px;
+    margin: 100px 0px;
+}
+
+.hero-section {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.hero-details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+
+    width: 500px;
+    padding: 20px 100px;
+}
+
+.hero-details>.hero-title {
+    color: var(--heading-color);
+    font-size: 40px;
+    font-weight: 700;
+
+    margin: 0px;
+}
+
+.hero-details>p {
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+.hero-details>li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.plan-section {
+    display: flex;
+    flex-direction: column;
+    margin: 150px 0px;
+ 
+}
+
+.plan-section>h3 {
+    color: var(--heading-color);
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+   
+}
+
+.plan-section>.plans {
+ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.plan-section>.plans>.individual-plan {
+    text-align: center;
+}
+
+.plan-section>.plans>.individual-plan>h3 {
+    color: var(--heading-color);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.plan-section>.plans>.individual-plan>p {
+    color: var(--secondary-color);
+    font-size: 25px;
+    font-weight: 500;
+}
